@@ -26,7 +26,7 @@ namespace Remotely.Agent.Installer.Win.ViewModels
 
         private int progress;
 
-private string serverUrl = "https://tessone.zapto.org";
+private string serverUrl = "https://tesspro.ddns.net";
 
         private string statusMessage;
         public MainWindowViewModel()

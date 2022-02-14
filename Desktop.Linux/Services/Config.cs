@@ -6,7 +6,7 @@ namespace Remotely.Desktop.Linux.Services
 {
     public class Config
     {
-public string Host { get; set; } = "https://tessone.zapto.org";
+public string Host { get; set; } = "https://tesspro.ddns.net";
         private static string ConfigFile => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Remotely", "Config.json");
         private static string ConfigFolder => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Remotely");
         public static Config GetConfig()

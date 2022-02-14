@@ -234,7 +234,7 @@ namespace Remotely.Agent.Installer.Win.Services
             }
             else
             {
-                ProgressMessageChanged.Invoke(this, "Downloading Remotely agent.");
+                ProgressMessageChanged.Invoke(this, "Downloading Tess agent.");
                 var client = new WebClient();
                 client.DownloadProgressChanged += (sender, args) =>
                 {
@@ -244,7 +244,7 @@ namespace Remotely.Agent.Installer.Win.Services
                 await client.DownloadFileTaskAsync($"{serverUrl}/Downloads/Remotely-Win10-{Platform}.zip", targetFile);
             }
 
-            ProgressMessageChanged.Invoke(this, "Extracting Remotely files.");
+            ProgressMessageChanged.Invoke(this, "Extracting Tess files.");
             ProgressValueChanged?.Invoke(this, 0);
 
             var tempDir = Path.Combine(Path.GetTempPath(), "RemotelyUpdate");
